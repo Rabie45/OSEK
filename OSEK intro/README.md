@@ -4,6 +4,7 @@
 ## OSEK Concepts Part 1
 The OSEK operating system is a single processor operating system. The OSEK operating system provides a pool of different services and processing mechanisms.
 
+![image](https://github.com/Rabie45/OSEK/assets/76526170/11b161d9-61eb-464a-bcc0-97eb3dd448fc)
 
 ## Task management
 
@@ -21,6 +22,7 @@ The OSEK operating system is a single processor operating system. The OSEK opera
 
 ## Interrupt management
 
+![image](https://github.com/Rabie45/OSEK/assets/76526170/4aae4f36-98dc-4823-8252-b9ad9d508743)
 
     - Services for interrupt processing
 
@@ -34,7 +36,9 @@ The OSEK operating system is a single processor operating system. The OSEK opera
 
 ## Error treatment
 
-    - Mechanisms supporting the user in case of various errors architecture of the OSEK operating system
+    - Mechanisms supporting the user in case of various errors 
+ ## Architecture of the OSEK operating system
+![image](https://github.com/Rabie45/OSEK/assets/76526170/ff231277-7ea8-4e64-881c-b4602d21ac42)
 
 
 ## Processing levels
@@ -50,6 +54,8 @@ The OSEK operating system is a single processor operating system. The OSEK opera
 
 
     - Task
+    ![image](https://github.com/Rabie45/OSEK/assets/76526170/6a614cbe-23cb-4bcd-b8c2-3df291a2379b)
+
          a task refers to a unit of work or a program that is executed by the computer system. Tasks can be thought of as individual processes or threads that perform specific functions or operations.
 
              The primary task of an operating system is to manage and coordinate these tasks to ensure the efficient and orderly execution of programs. This involves allocating system resources such as CPU time, memory, and input/output devices to different tasks based on priority and scheduling policies.
