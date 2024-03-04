@@ -4,3 +4,18 @@
 those word created from this paper https://www.irisa.fr/alf/downloads/puaut/TPNXT/images/os223.pdf
 
 this is very good rep for examples of osek https://github.com/SareaHariri/OSEK-OS-Course-I-Repo
+
+
+## Explined 
+  [x] introduction
+  [x] Task
+  [x] resource mangment 
+  [x] Mutex and semaphore
+  
+
+
+## To be Explained 
+  [ ] Error handling
+  [ ] Hook routines 
+  [ ] Description of system services   
+  [ ] Specification of operating system services 
