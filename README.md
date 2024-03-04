@@ -6,7 +6,7 @@ those word created from this paper https://www.irisa.fr/alf/downloads/puaut/TPNX
 this is very good rep for examples of osek https://github.com/SareaHariri/OSEK-OS-Course-I-Repo
 
 
-## Explined 
+## Explained 
   - [x] introduction
   - [x] Task
   - [x] resource management
