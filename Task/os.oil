@@ -20,22 +20,5 @@ CPU CORTEX-M4 {
                 STACKSIZE = 50;
                 RESOURCE = SharedRes; 
         };
-        TASK TaskB {
-                PRIORITY = 11;
-                SCHEDULE = FULL;
-                ACTIVATION = 1;
-                AUTOSTART = FALSE 
-                STACKSIZE = 50;
-                RESOURCE = SharedRes; 
-      };		 
-		TASK TaskC {
-					PRIORITY = 20; 
-					SCHEDULE = FULL; 
-					ACTIVATION = 1; 
-					AUTOSTART = FALSE 
-					STACKSIZE = 50; 
-		};
-      RESOURCE SharedRes{
-            RESOURCEPROPERITY = STANDARD ; 
-      }
+        
 };

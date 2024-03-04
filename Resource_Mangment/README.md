@@ -66,8 +66,14 @@ Potential for priority escalation: Boosting task priorities can potentially lead
 
 OSEK Priority Ceiling Protocol with extensions for interrupt levels ( U can read this part from the articel page 32)
 
+to create the shared resource in oil file 
+use RESOURCE resource_name{
+	 RESOURCEPROPERITY = STANDARD ;
+}
+     
+setting resourceproperty = standard ensures the resource adheres to these default OSEK resource management principles, including the defined resource types, scheduling based on priorities, and the absence of priority inheritance or ceiling priorities.
 
-
-
+  GetResource(SharedRes);  used to lock the resource
+   ReleaseResource(SharedRes); used to unlock the resource
 
   
