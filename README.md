@@ -9,8 +9,10 @@ this is very good rep for examples of osek https://github.com/SareaHariri/OSEK-O
 ## Explined 
   [x] introduction
   [x] Task
-  [x] resource mangment 
+  [x] resource management
   [x] Mutex and semaphore
+  [x] deadlock and proirity inversions
+
   
 
 
