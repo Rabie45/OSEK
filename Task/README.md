@@ -40,7 +40,8 @@ this number would be defined in the oil (osek implemntation lang) file system of
 ## Full preemptive scheduling 
 Full preemptive scheduling will put the running task into the ready state, as soon as a higherpriority task has got ready. The task context is saved so that the preempted task can be continued at the location where it was preempted.
 
-## Non preemptive scheduling 
+## Non preemptive scheduling
+![image](https://github.com/Rabie45/OSEK/assets/76526170/2da2f6d7-e115-471e-a755-deadb18311ce)
 Non preemptive scheduling imposes particular constraints on the possible timing requirements of tasks. 
 
 ## To terminate task use this API 
@@ -51,17 +52,17 @@ the code below show an example of oil file and c code of how to create and detmi
 
 
 TASK my task{
-PRIORITY =1; refer to static pirority of the task 
-AUTOSTART =FASLE this mean suspended     true mean ready
-ACTIVATION = 1; activation number that mentiond below
-SCHEDULE = NON; STACKSIZE = 32768
-STACKSIZE= 20000 Target specific extension Here, the size of the stack. The stack has to be large enough to push 2 Unix signals frames
+PRIORITY =1; refer to static pirority of the task. 
+AUTOSTART =FASLE this mean suspended     true mean ready.
+ACTIVATION = 1; activation number that mentiond below.
+SCHEDULE = NON; STACKSIZE = 32768.
+STACKSIZE= 20000 Target specific extension Here, the size of the stack. The stack has to be large enough to push 2 Unix signals frames.
 };
-example for 3 tasks  A,B and C 
-C is the highest 
-A is the lowest 
+example for 3 tasks  A,B and C .
+C is the highest .
+A is the lowest .
 
 
-A is Autostart then A will activate B 
-B will terminate it self 
-back to A will activate B  
+A is Autostart then A will activate B .
+B will terminate it self .
+back to A will activate B  .
