@@ -2,24 +2,24 @@
 The resource management is used to co-ordinate concurrent accesses of several tasks with different priorities to shared resources,
 
 ## Resource management ensures that 
-• two tasks cannot occupy the same resource at the same time.
- • priority inversion can not occur. 
-• deadlocks do not occur by use of these resources. 
-• access to resources never results in a waiting state.
+ - two tasks cannot occupy the same resource at the same time.
+ -  priority inversion can not occur. 
+ -  deadlocks do not occur by use of these resources. 
+ - access to resources never results in a waiting state.
 If the resource management is extended to the interrupt level it assures in addition that
- • two tasks or interrupt routines cannot occupy the same resource at the same time. 
+ - two tasks or interrupt routines cannot occupy the same resource at the same time. 
 
 ## The functionality of resource management is useful in the following cases: 
-• preemptable tasks 
-• non preemptable tasks, if the user intends to have the application code executed under other scheduling policies, too 
-• resource sharing between tasks and interrupt service routines 
-• resource sharing between interrupt service routines
+ - preemptable tasks 
+ - non preemptable tasks, if the user intends to have the application code executed under other scheduling policies, too 
+ - resource sharing between tasks and interrupt service routines 
+ - resource sharing between interrupt service routines
 
 ## Scheduler as a resource:
-the scheduler could be locked if the task preempted it self.
+The scheduler could be locked if the task preempted it self.
  
 ## Types:
- - semaphore (bianary - counting ): a semaphore is a synchronization primitive used to control access to shared resources by multiple threads or processes within a program.
+ - Semaphore (bianary - counting ): a semaphore is a synchronization primitive used to control access to shared resources by multiple threads or processes within a program.
  - Mutex:A mutex, short for mutual exclusion object, is a synchronization primitive used in concurrent programming to ensure only one thread can access a shared resource at a time. This prevents race conditions, which occur when multiple threads attempt to modify the same data simultaneously, potentially leading to unexpected results or data corruption.
 
 ## Problems:
@@ -29,16 +29,17 @@ the scheduler could be locked if the task preempted it self.
 but if task b is ready task a should be wait and task b start running but both of them use variable i  then to stop task b modifing task a resource so task b turns to blocked state even if task b is higher priority this is called priority inversions
 (it arises when a high-priority task is unintentionally delayed by a lower-priority task, essentially inverting the intended execution order based on priority levels.)
 
-to slove this problem we should use semaphore to lock the resource to be modified until it complete executing  
+'''To slove this problem we should use semaphore to lock the resource to be modified until it complete executing'''  
 
 
  - Deadlock
        A deadlock is a situation in an operating system where a set of processes are blocked forever because each process is holding a resource and waiting for another resource that is currently being held by another process in the same set. This creates a circular dependency, preventing any of the processes from making further progress.
-	Example:
+   - Example:
 		The following scenario results in a deadlock (see Figure 8-2):  Task T1 occupies the semaphore S1 and subsequently cannot continue running, e.g. because it is waiting for an event. Thus, the lower-priority task T2 is transferred into the running state. It occupies the semaphore S2. If T1 gets ready again and tries to occupy semaphore S2, it enters the waiting state again. If now T2 tries to occupy semaphore S1, this results in a deadlock.
 
 
-# Figure
+![image](https://github.com/Rabie45/OSEK/assets/76526170/4ca82aed-8f26-48cd-a869-80c4aa007e19)
+
 
 ## OSEK Priority Ceiling Protocol: 
 The Priority Ceiling Protocol (PCP) is a synchronization protocol used in real-time systems to prevent deadlock and unbounded priority inversion. It ensures that high-priority tasks are not indefinitely blocked by lower-priority tasks, guaranteeing predictable and timely task execution.
