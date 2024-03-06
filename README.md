@@ -12,12 +12,11 @@ this is very good rep for examples of osek https://github.com/SareaHariri/OSEK-O
   - [x] resource management
   - [x] Mutex and semaphore
   - [x] deadlock and proirity inversions
+  - [x] Event handling
 
   
 
 
 ## To be Explained 
-   - [ ] Error handling
-   - [ ] Hook routines 
    - [ ] Description of system services   
    - [ ] Specification of operating system services 
